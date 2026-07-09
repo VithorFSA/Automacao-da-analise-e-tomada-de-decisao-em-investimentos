@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestidorFSA • Detalhe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar compact">
+    <div>
+      <p class="brand">InvestidorFSA</p>
+      <h1 id="methodTitle">Detalhe do indicador</h1>
+      <p class="subtitle" id="methodSubtitle">Conta aberta do ativo selecionado.</p>
+    </div>
+    <a class="btn ghost" href="index.html">Voltar</a>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="section-head">
+        <h2>Ativo</h2>
+        <p class="muted">Preço real e fonte usada.</p>
+      </div>
+      <div id="assetSnapshot" class="snapshot"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Como calcular</h2>
+        <p class="muted">Fórmula, números usados e resultado.</p>
+      </div>
+      <div id="methodDetails" class="method-details"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Outros indicadores</h2>
+        <p class="muted">Clique para trocar o cálculo.</p>
+      </div>
+      <div id="metricGrid" class="metric-grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

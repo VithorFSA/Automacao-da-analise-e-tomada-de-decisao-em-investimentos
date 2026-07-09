@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestidorFSA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="brand">InvestidorFSA</p>
+      <h1>Seu painel de análise de ativos</h1>
+      <p class="subtitle">Busque um ativo, carregue a cotação real e clique nos cards para ver a conta do indicador.</p>
+    </div>
+    <div class="header-card">
+      <div class="header-card-title">Fontes</div>
+      <div class="header-card-text">B3 • EUA • Cripto</div>
+      <div class="header-card-sub">fallback automático</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel hero">
+      <div class="search-box">
+        <label for="searchAsset">Pesquisar ativo</label>
+        <input id="searchAsset" type="text" placeholder="MXRF11, PETR4, AAPL, BTC..." autocomplete="off" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+
+      <div class="selected-asset" id="selectedAssetCard">
+        <p class="muted">Nenhum ativo selecionado ainda.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Indicadores</h2>
+        <p class="muted">Clique em um card para ver fórmula, componentes e resultado.</p>
+      </div>
+      <div id="metricGrid" class="metric-grid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-head">
+        <h2>Conta detalhada</h2>
+        <p class="muted">O card selecionado aparece aqui com a conta montada.</p>
+      </div>
+      <div id="metricDetail" class="metric-detail"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
