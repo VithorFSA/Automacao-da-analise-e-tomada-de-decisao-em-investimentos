@@ -1,0 +1,1 @@
+# Automa-o-da-an-lise-e-tomada-de-decis-o-em-investimentos
